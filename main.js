@@ -5,21 +5,55 @@
 function max (num1, num2) {
   if (num1 > num2) {
     return (num1);
+  } else {
+    return num2;
   }
 }
 
-max (3, 1);
+console.log(max(35, 68));
 
 // 2.
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // Then, write and example of using the function.
+/*
+function maxOfThree (numberA, numberB, numberC)
+if (numberA > numberB) {
+   return numberA;
+} else { //
+  return numberB;
+}
+if (numberC > numberA) {
+  return numberC;
+} else {
+  return numberA;
+}
+if (numberB > numberC) {
+  return numberB;
+} else {
+  return numberC;
+}
+} //
 
-function maxOfThree (numberA, numberB, numberC) {
+console.log(maxOfThree(2, 3, 67)); */
 
- }
+function maxOfThree(num1, num2, num3) {
+  if (num2 > num1) {
+  max = num2;
+} else {
+  max = num1;
 }
 
-// maxOfThree(7, 10, 13)
+if (max < num3) {
+  max = num3;
+} else {
+  return max;
+}
+}
+
+
+console.log(maxOfThree(333, 18, 6));
+
+
 
 // 3.
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
