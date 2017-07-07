@@ -60,27 +60,46 @@ console.log(maxOfThree(333, 18, 6));
 // Then, write and example of using the function.
 
 function isVowel(char){
-    // Your answer here
+  if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+console.log(isVowel('s'));
+
 
 
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // Then, write and example of using the function.
 
+function sum (addition1, addition2) {
+  return addition2 + addition1;
+}
 
+console.log(sum(67, 3));
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
 
+function avg (norm1, norm2, norm3) {
+  return ((norm1 + norm2 + norm3) / 3)
+}
 
+console.log(avg(15, 30, 20));
 
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
 
+function getLength (measure) {
+  return measure;
+}
 
+console.log(getLength('12 feet'));
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
@@ -88,7 +107,15 @@ function isVowel(char){
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
 
+function greaterThan (valueD, valueR) {
+  if (valueD < valueR) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
+console.log(greaterThan(40, 39));
 
 // 8.
 // Write a function called `greet` that takes a
@@ -97,7 +124,11 @@ function isVowel(char){
 // is the parameter that was passed in.
 // Then, write and example of using the function.
 
+function great (me) {
+  return ("Hello " + me + "!")
+}
 
+console.log(great("Johnni"));
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
@@ -107,3 +138,9 @@ function isVowel(char){
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+
+function madLib (wordE, wordT, wordU, wordP) {
+  return ("I " + wordE + " yesterday, but immediately " + wordT + ". " + wordU + " is not " + wordP + ".");
+}
+
+console.log(madLib('ate oysters', 'regretted it', 'Eating old, raw oyesters', 'advisable'));
